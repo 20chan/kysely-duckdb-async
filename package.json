@@ -1,0 +1,21 @@
+{
+  "name": "kysely-duckdb-async",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/20chan/kysely-duckdb-async"
+  },
+  "keywords": [],
+  "author": "20chan",
+  "license": "MIT",
+  "description": "kysely dialect for DuckDB",
+  "devDependencies": {
+    "duckdb-async": "^1.1.3",
+    "kysely": "^0.27.5",
+    "typescript": "^5.7.2"
+  }
+}
