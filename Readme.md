@@ -22,3 +22,27 @@ const result = await kysely
   .where('id', '=', 1)
   .execute();
 ```
+
+## Type supports for DuckDB datatypes
+
+> TODO
+
+Supports array, map, and struct types.
+
+```typescript
+interface Test {
+  id: number;
+  arr: [number, number, number];
+  map: Map<string, number>;
+  struct: { a: number; b: number };
+}
+
+await db.insertInto('test')
+  .values({
+    id: 1,
+    arr: new ListValue([1, 2, 3]),
+    map: new MapValue(new Map([['a', 1], ['b', 2]])),
+    struct: new StructValue({ a: 1, b: 2 }),
+  })
+  .execute();
+```
