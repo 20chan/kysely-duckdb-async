@@ -51,7 +51,7 @@ export class DuckDbConnection implements DatabaseConnection {
     }
 
     const row = table[0];
-    const numAffectedRows = row === null ? undefined : BigInt(row['Count']);
+    const numAffectedRows = !row ? undefined : BigInt(row['Count']);
 
     return {
       numAffectedRows,
