@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/20chan/kysely-duckdb-async"
   },
-  "keywords": [],
+  "keywords": ["kysely", "duckdb"],
   "author": "20chan",
   "license": "MIT",
   "description": "kysely dialect for DuckDB",
