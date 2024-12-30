@@ -1,7 +1,8 @@
 {
   "name": "kysely-duckdb-async",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "mocha --require ts-node/register tests/**/*.ts"
